@@ -3,10 +3,10 @@ module Pregame.Lens
   ) where
 
 import Control.Lens as X
-  ( view
+  ( lens
+  , view
   , set
   , over
   , Lens
   , Lens'
-  , (&)
   )

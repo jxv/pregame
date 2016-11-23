@@ -6,11 +6,21 @@ module Pregame.Base
   , fi
   ) where
 
-import GHC.Base as X
+import Data.Function as X
   ( (.)
+  , ($)
+  , (&)
+  , const
+  , flip
+  , fix
   )
 import Data.Bool as X
   ( Bool(..)
+  , (&&)
+  , (||)
+  )
+import Data.Bits as X
+  ( Bits
   )
 import Data.Char as X
   ( Char
@@ -55,11 +65,12 @@ import Data.Foldable
   , foldl'
   )
 import Data.List as X
-  (
+  ( or
+  , and
   )
 import Control.Applicative as X
   ( Applicative(pure, (<*>))
-  , Alternative((<|>))
+  , Alternative((<|>), some, many)
   )
 import Data.Maybe as X
   ( Maybe(Just, Nothing)
