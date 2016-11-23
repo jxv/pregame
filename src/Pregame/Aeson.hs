@@ -3,6 +3,6 @@ module Pregame.Aeson
   ) where
 
 import Data.Aeson as X
-  ( ToJSON(..)
-  , FromJSON(..)
+  ( ToJSON
+  , FromJSON
   )

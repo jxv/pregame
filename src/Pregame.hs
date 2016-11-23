@@ -9,6 +9,7 @@ import Pregame.Bytestring as X
 import Pregame.Containers as X
 import Pregame.DataDefault as X
 import Pregame.Either as X
+import Pregame.IntegerGmp as X
 import Pregame.Lens as X
 import Pregame.Megaparsec as X
 import Pregame.Mtl as X

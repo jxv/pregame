@@ -22,21 +22,18 @@ import Data.Int as X
   , Int32
   , Int64
   )
-import GHC.Integer as X
-  ( Integer
-  )
 import GHC.Float as X
   ( Float
   , Double
   )
 import GHC.Enum as X
-  ( Enum(..)
+  ( Enum
   )
 import GHC.Num as X
-  ( Num(..)
+  ( Num
   )
 import GHC.Real as X
-  ( Integral(..)
+  ( Integral
   , fromIntegral
   )
 import Data.Eq as X
@@ -80,6 +77,22 @@ import Control.Monad as X
   )
 import System.IO as X
   ( IO
+  )
+import Control.Concurrent.Chan as X
+  ( Chan
+  , newChan
+  , readChan
+  , writeChan
+  , dupChan
+  )
+import Control.Concurrent.MVar as X
+  ( MVar
+  , newMVar
+  , newEmptyMVar
+  , readMVar
+  , putMVar
+  , takeMVar
+  , modifyMVar
   )
 
 done :: Monad m => m ()
