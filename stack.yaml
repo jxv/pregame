@@ -1,0 +1,7 @@
+resolver: lts-7.9
+packages:
+- '.'
+extra-deps:
+- hashable-1.2.4.0
+flags: {}
+extra-package-dbs: []
