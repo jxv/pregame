@@ -42,7 +42,7 @@ library
     , containers
     , data-default
     , either
-    , hashsble
+    , integer-gmp
     , lens
     , megaparsec
     , mtl

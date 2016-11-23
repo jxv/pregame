@@ -23,7 +23,7 @@ import Control.Monad.Writer as X
   , Writer
   , runWriter
   )
-import Control.Monad.Writer as X
+import Control.Monad.RWS as X
   ( MonadRWS
   , RWST(runRWST)
   , RWS
@@ -33,6 +33,7 @@ import Control.Monad.Trans as X
   ( MonadTrans(lift)
   , MonadIO(liftIO)
   )
+import Pregame.Base
 
 io :: MonadIO m => IO a -> m a
 io = liftIO

@@ -11,6 +11,8 @@ import Data.Either.Combinators as X
   , rightToMaybe
   )
 
+import Pregame.Base
+
 maybeToLeft :: b -> Maybe a -> Either a b
 maybeToLeft _ (Just x) = Left x
 maybeToLeft y Nothing  = Right y

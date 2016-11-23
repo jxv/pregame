@@ -1,6 +1,9 @@
+{-# LANGUAGE BangPatterns #-}
 module Pregame.Base
   ( module X
   , done
+  , ($!)
+  , fi
   ) where
 
 import GHC.Base as X
@@ -19,27 +22,32 @@ import Data.Int as X
   , Int32
   , Int64
   )
-import Data.Integer as X
+import GHC.Integer as X
   ( Integer
   )
 import GHC.Float as X
   ( Float
-  )
-import GHC.Double as X
-  ( Double
+  , Double
   )
 import GHC.Enum as X
   ( Enum(..)
   )
+import GHC.Num as X
+  ( Num(..)
+  )
+import GHC.Real as X
+  ( Integral(..)
+  , fromIntegral
+  )
 import Data.Eq as X
-  ( Eq(..)
+  ( Eq((==))
   )
 import Data.Monoid as X
-  ( Monoid(..)
+  ( Monoid(mempty, mappend, mconcat)
   , (<>)
   )
 import Data.Functor as X
-  ( Functor(..)
+  ( Functor(fmap)
   , ($>)
   , (<$>)
   , void
@@ -52,11 +60,34 @@ import Data.Foldable
 import Data.List as X
   (
   )
-import Control.Appliative as X
+import Control.Applicative as X
   ( Applicative(pure, (<*>))
   , Alternative((<|>))
   )
-import Prelude (Monad(return))
+import Data.Maybe as X
+  ( Maybe(Just, Nothing)
+  , maybe
+  , fromMaybe
+  , isJust
+  , isNothing
+  , catMaybes
+  )
+import Data.Either as X
+  ( Either(Left, Right)
+  )
+import Control.Monad as X
+  ( Monad(return, (>>=))
+  )
+import System.IO as X
+  ( IO
+  )
 
 done :: Monad m => m ()
 done = return ()
+
+infixr 0 $!
+($!) :: (a -> b) -> a -> b
+f $! x = let !vx = x in f vx
+
+fi :: (Num b, Integral a) => a -> b
+fi = fromIntegral
