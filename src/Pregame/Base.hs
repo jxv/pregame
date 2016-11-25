@@ -36,6 +36,19 @@ import Data.Int as X
   , Int32
   , Int64
   )
+import Data.Char as X
+  ( isSpace
+  , isLower
+  , isUpper
+  , isAlpha
+  , isAlphaNum
+  , isDigit
+  , isOctDigit
+  , isHexDigit
+  , isLetter
+  , toLower
+  , toUpper
+  )
 import Data.Word as X
   ( Word8
   , Word16
@@ -174,7 +187,7 @@ import Data.Functor as X
   , (<$>)
   , void
   )
-import Data.Foldable
+import Data.Foldable as X
   ( Foldable
   , foldMap
   , foldr
@@ -213,6 +226,8 @@ import GHC.List as X
   , replicate
   , repeat
   , iterate
+  , drop
+  , take
   )
 import Data.List.NonEmpty as X
   ( NonEmpty((:|))
