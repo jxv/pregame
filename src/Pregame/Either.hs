@@ -5,9 +5,7 @@ module Pregame.Either
   ) where
 
 import Data.Either.Combinators as X
-  ( isLeft
-  , isRight
-  , leftToMaybe
+  ( leftToMaybe
   , rightToMaybe
   )
 

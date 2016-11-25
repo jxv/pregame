@@ -3,10 +3,25 @@ module Pregame.Lens
   ) where
 
 import Control.Lens as X
-  ( lens
-  , view
-  , set
-  , over
-  , Lens
+  ( Lens
   , Lens'
+  , makeLenses
+  , lens
+  , _1
+  , _2
+  , _3
+  , _4
+  , _5
+  , _6
+  , _7
+  , _8
+  , _9
+  , to
+  , (^.)
+  , set
+  , (.~)
+  , over
+  , (%~)
+  , view
+  , use
   )

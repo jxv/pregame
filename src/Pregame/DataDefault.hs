@@ -3,5 +3,6 @@ module Pregame.DataDefault
   ) where
 
 import Data.Default as X
-  ( Default(def)
+  ( Default
+  , def
   )

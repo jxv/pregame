@@ -3,9 +3,10 @@ name:
 version:
   1.0.0
 synopsis:
-  Prelude counterpart
+  Prelude for applications
 description:
-  Excessive Prelude styled imports.
+  * Re-exports subsections of common and/or practical libraries
+  * Fixing Haskell's historical baggage is out of scope
 homepage:
   https://github.com/jxv/pregame
 license:
@@ -41,14 +42,13 @@ library
     , bytestring
     , containers
     , data-default
+    , deepseq
     , either
+    , ghc-prim
     , integer-gmp
     , lens
-    , megaparsec
     , mtl
-    , pointed
     , safe
-    , semigroups
     , stm
     , text
     , text-conversions
