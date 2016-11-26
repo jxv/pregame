@@ -5,6 +5,7 @@ module Pregame
 import Pregame.Aeson as X
 import Pregame.Array as X
 import Pregame.Base as X
+import Pregame.Beware as X
 import Pregame.Bytestring as X
 import Pregame.Containers as X
 import Pregame.DataDefault as X

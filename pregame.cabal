@@ -1,7 +1,7 @@
 name:
   pregame
 version:
-  1.0.0.1
+  1.0.1.0
 synopsis:
   Prelude for applications
 description:
@@ -38,6 +38,7 @@ library
     Pregame.Aeson
     Pregame.Array
     Pregame.Base
+    Pregame.Beware
     Pregame.Bytestring
     Pregame.Containers
     Pregame.DataDefault
