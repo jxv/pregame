@@ -16,6 +16,7 @@ import Pregame.IntegerGmp as X
 import Pregame.Lens as X
 import Pregame.Mtl as X
 import Pregame.Safe as X
+import Pregame.StateVar as X
 import Pregame.Stm as X
 import Pregame.Text as X
 import Pregame.TextConversions as X

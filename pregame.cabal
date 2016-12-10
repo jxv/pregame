@@ -1,7 +1,7 @@
 name:
   pregame
 version:
-  1.0.1.0
+  1.0.2.0
 synopsis:
   Prelude for applications
 description:
@@ -34,7 +34,6 @@ source-repository head
 library
   exposed-modules:
     Pregame
-  other-modules:
     Pregame.Aeson
     Pregame.Array
     Pregame.Base
@@ -49,6 +48,7 @@ library
     Pregame.Lens
     Pregame.Mtl
     Pregame.Safe
+    Pregame.StateVar
     Pregame.Stm
     Pregame.Text
     Pregame.TextConversions
@@ -72,6 +72,7 @@ library
     , lens
     , mtl
     , safe
+    , StateVar
     , stm
     , text
     , text-conversions

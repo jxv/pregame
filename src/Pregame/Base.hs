@@ -158,7 +158,7 @@ import GHC.Real as X
   , realToFrac
   )
 import Data.Eq as X
-  ( Eq((==))
+  ( Eq((==), (/=))
   )
 import Data.Monoid as X
   ( Monoid
